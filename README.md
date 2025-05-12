@@ -1,19 +1,24 @@
-# 4.4 - Merge Sort
+# 25 - Merge Sort (A Challenge)
 
 ###### ICS4U - Mr. Brash 🐿️
 
-"Split Search" was actually "Binary Search". I didn't want you Googling the code. **Merge sort** is _not_ a codename - that is what it's called. Try generating the code yourself - there is a lot of supporting material available here.
+"Split Search" was actually "Binary Search". I didn't want you _Googling_ the code. **Merge sort** is _not_ a codename - that is what it's called.
 
-The algorithms for Bubble, Selection, and Insert sort are all very _linear_. They traverse the array one element at a time in a specific direction. Instead, we can break the array down into smaller pieces (in fact, down to the individual items) and when we _traverse back up the tree_, we can sort as we go. This creates a much faster sorting process. Here's an animation and still image from Wikipedia:
+Try generating the code yourself - there is a lot of supporting material available here.
+
+The algorithms for Bubble, Selection, and Insert sort are all very _linear_. They traverse the array one element at a time in a specific direction. Instead, we can break the array down into smaller pieces (in fact, down to the individual items) and when we traverse _back up the tree_, we can sort as we go. This creates a much faster sorting process. Here's an animation and still image from Wikipedia:
 
 ---
 
-<img alt="Merge Sort Animation" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" style="vertical-align: top;">
+<img alt="Merge Sort Animation" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" style="vertical-align: top;">  
+
+&nbsp;
+
 <img alt="Merge Sort Still Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/1200px-Merge_sort_algorithm_diagram.svg.png" width="400px">
 
 ---
 
-In the still image above you can see a "top-down" approach where we separate the sorting process into 'threads' that get taken care of in the green arrows (after fully separating into individual items). Those green arrows occur during the _return_ portion of the algorithm and the sort is performed by **copying** the data into a **new** array (we do not modify the original).
+In the still image you can see a "top-down" approach where we separate the sorting process into 'threads'. Each thread gets separated into indifidual items (single-element arrays). The green arrows are showing the _return_ portion of the algorithm. The sorting happens along the return by **copying** the data into a **new** temporary array (we do not modify the original).
 
 - [Here is the algorithm in action with playing cards](https://youtu.be/AMJjtTo1LLE).
 - [Here is the algorithm in action as a folk dance](https://youtu.be/XaqR3G_NVoo) (I recommend speeding this one up).
@@ -49,7 +54,13 @@ Name the functions what you want, but essentially `mergeSortHelper` is the _recu
 
 ---
 
-Implement the `mergeSort` algorithm using JavaScript and the details given above. Test it on a relatively large array.
+Implement the `mergeSort` algorithm. Test it on a relatively large array.
+
+---
+
+**🤔 What's Next?**
+
+The RST...
 
 <br>
 
